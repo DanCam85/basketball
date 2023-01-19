@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="home-team">
+        <h3>Home</h3>
+        <div class="scoreboard">
+          <p id="home-score">0</p>
+        </div>
+        <button class="btn" id="home-1" onclick="homeAddOne()">+1</button>
+        <button class="btn" id="home-2" onclick="homeAddTwo()">+2</button>
+        <button class="btn" id="home-3" onclick="homeAddThree()">+3</button>
+      </div>
+      <div>
+        <h3>Guest</h3>
+        <div class="scoreboard">
+          <p id="guest-score">0</p>
+        </div>
+        <button class="btn" id="guest-1" onclick="guestAddOne()">+1</button>
+        <button class="btn" id="guest-2" onclick="guestAddTwo()">+2</button>
+        <button class="btn" id="guest-3" onclick="guestAddThree()">+3</button>
+      </div>
+    </div>
+    <div class="block">
+      <button id="end-game" onclick="endGame()">End Game</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
